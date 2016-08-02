@@ -1,3 +1,6 @@
+
+# Use this to Launch the filter that uses Madgwicks 9DOF filter
+
 <launch>
   <node pkg="imu_filter_madgwick" type="imu_filter_node" name="imu_filter">
     <param name="use_mag" value="false"/> 
