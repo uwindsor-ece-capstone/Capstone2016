@@ -1,0 +1,11 @@
+TrajectoryPlannerROS:
+  max_vel_x: 0.3
+  min_vel_x: 0.3
+  max_vel_y: 0.0  # diff drive robot
+  min_vel_y: 0.0  # diff drive robot
+
+  meter_scoring: true
+
+  
+
+  holonomic_robot: false
