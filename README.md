@@ -34,7 +34,7 @@ During the final year of Electrical and Computer Engineering at the University o
 ## Team Members
 * Affan Rashdi
 * Theepan Yoganathan
-* Haileab Yosepf
+* Haileab Yoseph
 
 ## License
 
