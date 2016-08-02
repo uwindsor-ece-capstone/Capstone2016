@@ -1,0 +1,62 @@
+to run lidar
+
+go to catkin folder
+
+run catkin_make
+
+source devel/setup.bash
+
+rosrun xv_11_laser_driver neato_laser_publisher _port:=/dev/ttyACM0 _firmware_version:=2
+
+this will run the node scan which will have the data necessary 
+
+---------------------------
+
+rosrun rviz rviz will open the graphics window
+
+------------------------------
+
+installed gmapping using command (*)use this to download libraries from ros
+
+sudo apt-get install ros-indigo-
+
+---------------------------------------------------------------------------
+rosrun gmapping slam_gmapping
+
+---------------------------------------------------------------------------
+
+laser scan matcher used for odem
+
+rosrun laser_scan_matcher laser_scan_matcher_node _fixed_frame:=odom
+
+-------------------------------------------------------------------
+rosrun tf static_transform_publisher 0 0 0 0 0 0 /base_link /neato_laser 100
+
+This static odom worked? 
+rosrun tf static_transform_publisher 0 0 0 0 0 0 /odom /base_link 100
+
+note: look at names created by laser scan matcher and for static transform. 
+
+
+----------------------------------------------------------------------------
+
+advised that parameter once roscore enabled? not necessary slam worked
+
+	rosparam set use_sim_time true
+
+--------------------------------------------------------------
+To see processes use 
+
+	rosrun rqt_graph rqt_graph
+-----------------------------------------------------------------------------
+
+running amcl
+
+	rosrun amcl amcl
+
+-----------------------------------------------------------------------------
+
+map_server
+
+is used to create and setup a map-server node which allows programs such as amcl to use map for location detection.
+

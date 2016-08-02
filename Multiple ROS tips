@@ -1,0 +1,44 @@
+ssh debian@192.168.7.2 --usb	
+ssh debian@192.168.1.114 -- wifi
+ 
+copy and paste in terminal using shift with keys
+
+to view cpu usage and processes htop
+
+had issures with cmake solved
+----------------------------------------------------
+
+ON beaglebone (slave)
+
+
+
+export ROS_MASTER_URI=http://192.168.1.108:11311
+export ROS_IP=192.168.1.114
+
+----------------------------------------------------
+
+ON local computer (master)
+ROS_MASTER_URI=http://192.168.1.108:11311
+export ROS_MASTER_URI=http://192.168.1.108:11311
+
+export ROS_IP=192.168.1.108
+
+---------------------------------------------------
+
+export LC_ALL="C"
+
+------------------------------------------------------
+
+to ssh into beaglebone through wifi just use the ip adress 
+
+------------------------------------------------------
+
+to make custum ros file executable 
+
+chmod 755 filename
+
+this will allow you to rosrun folder filename
+
+within src in catkin_make
+
+also make sure you make it source so it can find it

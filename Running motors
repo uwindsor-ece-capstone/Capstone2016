@@ -1,0 +1,28 @@
+getting motors running with ros
+
+complex issue, adafruit bbio requires to run as root for pwm
+
+to fix this,
+
+sudo su
+source /opt/ros/indigo/setup.bash
+export ROS_MASTER_URI=http://192.168.1.108:11311
+rosrun xv_11_laser_driver motor.py
+
+will need to add all ros settings again such as rosmaster location
+------------------------------------------------------------
+in terminal
+
+remember file is saved xv_11_laser_driver motor.py
+
+rosrun xv_11_laser_driver motor.py
+
+chmod 755 motor.py to allow for executable file by ros
+
+all working on July 5
+
+ran imu and robot 2 on bbb
+
+ran robot 2 and base on pc
+
+for issues concerning timing the clocks on both were synchronized used phone to sync bbb clock. veryimportant!!!

@@ -1,0 +1,45 @@
+Running i2c imu on beaglebone, this reads 9dof values
+
+run using i2c_imu i2c_imu_node
+
+remember this is in catkin_make file
+
+saved as filter.launch
+and rememver that the name of the ouput is to be data_raw if to be used by filter
+
+Data P920
+clock P9_19
+for 9DOF
+------------------------------------------------
+
+run filter on pc 
+rosrun imu_filter_madgwick imu_rilter_node
+
+also saved as filter.launch (not to be used in filal)
+
+
+---------------------------------------------
+
+Update July 2 2016
+
+ran imu from beaglebone into pc, with laser scan mather and move base
+
+worked well, will not be using widgwick filter, since it fuses all data into orientation 
+
+will not be using localization package from clearpath
+
+
+-----------------------------------------------------------------
+http://wiki.ros.org/laser_scan_matcher
+
+-----------------------------------------------------------------
+
+issues with tf
+
+rosrun tf tf_monitor
+
+rosrun tf view_frames
+
+time and date on bbb set by timedatectl
+
+

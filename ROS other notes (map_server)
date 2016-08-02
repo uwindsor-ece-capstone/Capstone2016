@@ -1,0 +1,33 @@
+Notes:
+
+tried making map of room using map_server with command
+
+rosrun map_server map_saver
+
+in root folder created map and yaml file.
+
+once this map is loaded into mapserver using command 
+
+rosrun map_server map_server map.yaml
+
+amcl can be used to detect position within map
+---------------------------------------------------
+
+to see what topics are saying 
+
+rostopic echo /<topic name>
+
+--------------------------------------------------------------------------------
+
+June 4 
+roslaunch robot.launch
+
+used Launch file to 
+start neato laser publishing
+laser to base fixed publishing ;
+baselink to odom data published through laser scan matcher;
+start gmapping;
+
+roslaunch base.launch
+
+
