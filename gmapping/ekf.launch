@@ -1,3 +1,4 @@
+# Once Odom is properly configured robot_localization can be used
 <launch>
 	<node pkg="rviz" type="rviz" name="rviz"/>
 	
