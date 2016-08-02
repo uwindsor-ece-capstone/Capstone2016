@@ -30,3 +30,18 @@ During the final year of Electrical and Computer Engineering at the University o
 			  *	Static_transform_tf
 			  *	3D_model with RVIZ
 			  *	AMCL
+
+## Team Members
+* Affan Rashdi
+* Theepan Yoganathan
+* Haileab Yosepf
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Dr. Aaron Mavrinac for help throughtout project for giving valuable insight into utilizing ROS
+* A Gentle Introduction to ROS by Jason M. O'Kane very helpful in understanding ROS 
+* ros.org 
