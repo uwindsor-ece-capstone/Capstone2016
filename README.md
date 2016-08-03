@@ -42,6 +42,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Dr. Aaron Mavrinac for help throughtout project for giving valuable insight into utilizing ROS
+* Dr. Aaron Mavrinac for his help throughtout the Capstone project and for giving valuable insight into utilizing ROS
 * A Gentle Introduction to ROS by Jason M. O'Kane very helpful in understanding ROS 
 * ros.org 
